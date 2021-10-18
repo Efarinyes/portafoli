@@ -1,0 +1,55 @@
+<header class="ae-container-fluid ae-container-fluid--full rk-header ">
+    <input type="checkbox" id="mobile-menu" class="rk-mobile-menu">
+    <label for="mobile-menu">
+      <svg>
+        <use xlink:href="assets/img/symbols.svg#bar"></use>
+      </svg>
+      <svg>
+        <use xlink:href="assets/img/symbols.svg#bar"></use>
+      </svg>
+      <svg>
+        <use xlink:href="assets/img/symbols.svg#bar"></use>
+      </svg>
+    </label>
+    <div class="ae-container-fluid rk-topbar">
+      <h1 class="rk-logo"><a routerLink="home"> {{ _servei.info.titol }} <sup>tm</sup></a></h1>
+      <nav class="rk-navigation">
+        <ul class="rk-menu">
+          <li routerLinkActive='active' class="rk-menu__item"><a routerLink="home" class="rk-menu__link">Inici</a>
+          </li>
+          <!-- <li class="active rk-menu__item"><a routerLink="" class="rk-menu__link">Portafoli</a>
+          </li> -->
+          <!-- <li class="rk-menu__item"><a href="blog.html" class="rk-menu__link">Blog</a>
+          </li> -->
+          <li routerLinkActive='active' class="rk-menu__item"><a routerLink="quisom" class="rk-menu__link">Qui som?</a></li>
+          <!-- <li class="rk-menu__item"><a href="#0" class="rk-menu__link">Pàgines</a>
+            <nav class="rk-menu__sub">
+              <ul class="rk-container">
+               
+                <!-- <li class="rk-menu__item"><a href="documentation.html" class="rk-menu__link">Documentació</a></li>
+                <li class="rk-menu__item"><a href="design-styles.html" class="rk-menu__link">Estils - Disseny </a></li> 
+              </ul>
+            </nav>
+          </li> -->
+          <!-- <li class="rk-menu__item"><a href="contact.html" class="rk-menu__link">Contacta</a>
+          </li> -->
+        </ul>
+        <div class="rk-search">
+          <input 
+              type="text" 
+              (keyup.enter) = 'cercarProducte(txtCercar.value)'
+
+              placeholder="Cerca" 
+              id="urku-search" 
+              class="rk-search-field"
+              #txtCercar
+          >
+          <label for="urku-search">
+            <svg>
+              <use xlink:href="assets/img/symbols.svg#icon-search"></use>
+            </svg>
+          </label>
+        </div>
+      </nav>
+    </div>
+  </header>
